@@ -1,5 +1,11 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body:after{
-  z-index: 1;
+  z-index: -1;
   content:"";
   background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
   height: 300%;
@@ -44,4 +50,20 @@ body:after{
     transform:translate(-15%,-20%)
   }
  
+}
+
+.back-and-forth {
+  animation: back-and-forth 50s ease-in-out infinite;
+}
+
+@keyframes back-and-forth {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
