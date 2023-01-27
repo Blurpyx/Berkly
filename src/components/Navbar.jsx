@@ -34,8 +34,8 @@ const Navbar = ({ currentTab }) => {
   };
 
   return (
-    <div className="flex justify-between items-center mt-5">
-      <img className="h-20" src="/images/berkly-logo.svg" alt="Berkly" />
+    <div className="flex justify-between items-center pt-5 lg:pt-3 xl:pt-1 w-[80%] mx-auto">
+      <img className="h-20 lg:h-24 xl:h-28" src="/images/berkly-logo.svg" alt="Berkly" />
       <ul className="flex">
         <li className="px-5">
           <button className="text-black" id="home" onClick={ChangeSelected}>
